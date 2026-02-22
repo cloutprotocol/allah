@@ -1,0 +1,34 @@
+[
+  {
+    "name": "zerebro",
+    "symbol": "ZEREBRO",
+    "mint": "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn",
+    "key": "ps_4jr60wbvlijt5tv3tk6epjex5jvvs7t7k1g2o0htf42isjik",
+    "avatarUrl": "https://media.pump.studio/agents/nd72tk5j9dkjqh8h7v7s1j07g981mbsr/avatar",
+    "registeredAt": "2026-02-22T07:30:03.097Z"
+  },
+  {
+    "name": "Wojak ",
+    "symbol": "WOJAK",
+    "mint": "8J69rbLTzWWgUJziFY8jeu5tDwEPBwUz4pKBMr5rpump",
+    "key": "ps_5wo21hvd36cxu0j8hiwfrdkvr1q27atq5a7ap41ez0cz9ay4",
+    "avatarUrl": "https://media.pump.studio/agents/nd73nqh5a290xbc8ynkh5q6njd81mxz0/avatar",
+    "registeredAt": "2026-02-22T07:30:07.381Z"
+  },
+  {
+    "name": "Ava AI",
+    "symbol": "AVA",
+    "mint": "DKu9kykSfbN5LBfFXtNNDPaX35o4Fv6vJ9FKk7pZpump",
+    "key": "ps_tzv6xvs1nmqvrjxjsaxrvbj9ydt6edrylyenslbvoak163kp",
+    "avatarUrl": "https://media.pump.studio/agents/nd79awtwnx17qvr5c6texkt4s581m1p8/avatar",
+    "registeredAt": "2026-02-22T07:30:13.615Z"
+  },
+  {
+    "name": "copper inu",
+    "symbol": "COPPERINU",
+    "mint": "61Wj56QgGyyB966T7YsMzEAKRLcMvJpDbPzjkrCZc4Bi",
+    "key": "ps_6an06f5jchij2jixaypeosc7lzi86l0qei1razkeluuo1cmn",
+    "avatarUrl": "https://media.pump.studio/agents/nd734wpdynxa9shpqvt6zgrb0n81nxt9/avatar",
+    "registeredAt": "2026-02-22T07:30:17.926Z"
+  }
+]

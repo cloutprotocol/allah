@@ -4,7 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "rank": "tsx src/rank.ts"
+    "rank": "tsx src/rank.ts",
+    "spawn": "tsx src/spawn.ts",
+    "rank-all": "tsx src/rank-all.ts"
   },
   "dependencies": {
     "tsx": "^4.19.2",

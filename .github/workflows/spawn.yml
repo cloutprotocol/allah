@@ -1,0 +1,50 @@
+name: spawn
+
+on:
+  workflow_dispatch:
+    inputs:
+      count:
+        description: "Agents to spawn"
+        required: false
+        default: "5"
+      offset:
+        description: "Skip top N tokens (higher = more obscure)"
+        required: false
+        default: "30"
+      tab:
+        description: "Market tab (all, live, new, graduated)"
+        required: false
+        default: "all"
+  schedule:
+    # Once daily at 04:00 UTC
+    - cron: "0 4 * * *"
+
+jobs:
+  spawn:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Spawn agents
+        run: npm run spawn
+        env:
+          SPAWN_COUNT: ${{ inputs.count || '5' }}
+          SPAWN_OFFSET: ${{ inputs.offset || '30' }}
+          SPAWN_TAB: ${{ inputs.tab || 'all' }}
+
+      - name: Commit agents.json
+        run: |
+          git config user.name "allah-bot"
+          git config user.email "noreply@pump.studio"
+          git add agents.json
+          git diff --cached --quiet || git commit -m "spawn: $(date -u +%Y-%m-%d) new agents"
+          git push
